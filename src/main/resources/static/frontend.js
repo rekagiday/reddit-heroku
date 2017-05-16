@@ -53,7 +53,7 @@ function createPost (post, index, voted = 0) {
           createElement({
             type: "img",
             attributes: {
-              "src": "images/upvote"+(voted == 1 ? "d":"")+".png",
+              "src": "img/upvote"+(voted == 1 ? "d":"")+".png",
               "alt":"upvote",
               "data-id": post["id"]
             }
@@ -65,7 +65,7 @@ function createPost (post, index, voted = 0) {
           createElement({
             type: "img",
             attributes: {
-              "src": "images/downvote"+(voted == -1 ? "d":"")+".png",
+              "src": "img/downvote"+(voted == -1 ? "d":"")+".png",
               "alt":"downvote",
               "data-id": post["id"]
             }
