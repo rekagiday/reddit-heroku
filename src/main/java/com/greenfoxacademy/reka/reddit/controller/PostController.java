@@ -47,7 +47,5 @@ public class PostController {
     post.upVote();
     repository.save(post);
   }
-
-
 }
 
