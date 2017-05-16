@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reddit Main Page</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="wrapper">
+  <nav>
+    <ul class="ul-left">
+      <li>MAIN</li>
+      <li>CREATE NEW POST</li>
+    </ul>
+    <ul class="ul-right">
+      <li>LOGGED IN AS</li>
+    </ul>
+  </nav>
+  <main>
+    <div class="section">
+      <div class="orderbox"></div>
+      <div class="votebox">
+        <img src="img/upvote.png" class="vote upvote"/>
+        <p class="score">0</p>
+        <img src="img/downvote.png" class="vote downvote"/>
+      </div>
+      <div class="contentbox">
+        <div class="item post-title"></div>
+        <div class="item submit-line"></div>
+        <div class="item modify-links">
+          <ul>
+            <li class="modifylink">modify</li>
+            <li class="removelink">remove</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+
+</div>
+<script src="reddit.js"></script>
+</body>
+</html>
