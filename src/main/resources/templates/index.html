@@ -2,47 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Reddit Main Page</title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
-  <link rel="stylesheet" href="style.css" />
+  <title>Reddit</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
-<div class="wrapper">
-  <nav>
-    <ul class="ul-left">
-      <li>MAIN</li>
-      <li>CREATE NEW POST</li>
-    </ul>
-    <ul class="ul-right">
-      <li>LOGGED IN AS</li>
-    </ul>
-  </nav>
+<nav>
+  <a href="#" id="add_post">Add new post</a>
+</nav>
 
-  <main>
-    <div class="section">
-      <div class="orderbox"></div>
-      <div class="votebox">
-        <img src="img/upvote.png" class="vote upvote"/>
-        <p class="score">0</p>
-        <img src="img/downvote.png" class="vote downvote"/>
+<main>
+  <div id="new" class="new hidden">
+    <form>
+      <div class="form-group">
+        <label for="url">url</label>
+        <input type="text" id="url" name="url" />
       </div>
-      <div class="contentbox">
-        <div class="item post-title"></div>
-        <div class="item submit-line"></div>
-        <div class="item modify-links">
-          <ul>
-            <li class="modifylink">modify</li>
-            <li class="removelink">remove</li>
-          </ul>
-        </div>
+      <div class="form-group">
+        <label for="title"><span>*</span>title</label>
+        <input type="text" id="title" name="title" />
       </div>
-    </div>
+      <input type="submit" value="submit" />
+    </form>
+  </div>
 
-
-  </main>
-
-
-</div>
-<script src="reddit.js"></script>
+</main>
+<script src="frontend.js"></script>
 </body>
 </html>
