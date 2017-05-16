@@ -42,11 +42,12 @@ public class PostController {
     return post;
   }
 
-  @RequestMapping(value = "/posts/{id}/upvote", method = RequestMethod.PUT)
-  public void upPost(@PathVariable(value = "id") long id) {
+  @PutMapping(value = "/posts/{id}/upvote")
+  public Post upPost(@PathVariable(value = "id") long id) {
     Post post = repository.findOne(id);
     post.upVote();
     repository.save(post);
+    return post;
   }
 }
 
