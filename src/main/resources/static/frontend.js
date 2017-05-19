@@ -88,7 +88,7 @@ function createPost (post, index, voted = 0) {
           }),
           createElement({
             type: "p",
-            inner: "submitted 1 year ago by <strong>"+("anonymous")+"</strong>"
+            inner: "submitted 1 minute ago by <strong>"+("anonymous")+"</strong>"
           })
         ]
       })

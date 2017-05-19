@@ -88,7 +88,7 @@ article div {
   padding: 5px 10px 15px 10px;
   background-color: #cee3f8;
   border-radius: 4px;
-  margin-bottom: 10px;
+  margin: auto auto 10px auto;
   font-size: large;
 }
 
